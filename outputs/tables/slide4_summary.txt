@@ -1,0 +1,19 @@
+### Slide 4 — Behavioral Insights (Evidence-Based)
+
+How insights were derived:
+- Cohort analytics on event logs (observed outcome rate patterns)
+- Counterfactual sensitivity tests on the trained sequence model (what-if deltas)
+
+Key insights:
+- Observed engagement fatigue: users with ≥5 events in the last 14 days had an outcome rate of ~49.7% vs ~55.6% for 3 events (-5.9 pp).
+- Timing sensitivity: when the most recent gap increases from 1d to 14d, average predicted probability shifts from ~59.1% to ~58.1% (-1.0 pp).
+- Counterfactual test: adding a recent content_review event (gap=2d) changes average predicted probability from ~59.0% to ~59.3% (+0.3 pp).
+
+Operational implications (ETS framing):
+- Calibrate cadence to avoid saturation and improve completion / re-engagement likelihood.
+- Use timing-aware nudges: intervene within ‘momentum windows’ and avoid long inactivity gaps.
+- Segment-aware policies: fatigue and timing sensitivity can differ by user group.
+
+_Figures to paste into Slide 4:_
+- `outputs/figures/fatigue_cohort.png`
+- `outputs/figures/time_gap_sensitivity.png`

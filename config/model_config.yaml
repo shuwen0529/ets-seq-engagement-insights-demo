@@ -1,0 +1,24 @@
+seed: 42
+
+data:
+  n_users: 6000
+  min_events: 5
+  max_events: 40
+  start_date: "2023-01-01"
+  n_days: 180
+
+sequence:
+  max_seq_len: 35
+  min_seq_len: 5
+
+model:
+  embed_dim: 24
+  hidden_dim: 64
+  dropout: 0.15
+  lr: 0.001
+  batch_size: 256
+  epochs: 12
+  patience: 3
+
+outputs:
+  top_quantile: 0.2

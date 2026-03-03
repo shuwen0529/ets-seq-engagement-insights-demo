@@ -1,0 +1,7 @@
+{
+  "counterfactual_add_recent_event": {
+    "base_avg_pred": 0.590013325214386,
+    "after_add_recent_content_review_gap2d": 0.593064546585083,
+    "delta": 0.0030512213706970215
+  }
+}
