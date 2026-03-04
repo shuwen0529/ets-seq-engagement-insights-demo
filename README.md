@@ -22,12 +22,6 @@ PYTHONPATH=. python scripts/04_extract_insights.py
 PYTHONPATH=. python scripts/05_make_slide4_summary.py
 ```
 
-## Key improvements vs v1
-
-- Baselines and LSTM are evaluated on the **same fixed validation users**
-- Both report the **same metrics**: AUC + Precision@Top20%
-- Synthetic label generation emphasizes **sequence timing/cadence effects**, so sequence models can add incremental value
-
 ## Outputs
 
 - Data:
