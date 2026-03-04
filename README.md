@@ -1,6 +1,6 @@
-# ets-seq-engagement-insights-demo (v2)
+# ets-seq-engagement-insights-demo
 
-End-to-end demo: generate ETS-style engagement sequences, train baselines + a PyTorch LSTM sequence model, and extract **slide-ready behavioral insights** using:
+End-to-end demo: generate ETS-style engagement sequences, train baselines + a PyTorch LSTM sequence model, and extract behavioral insights using:
 - cohort analytics (data-level patterns)
 - counterfactual sensitivity tests (model-level "what-if" analysis)
 
@@ -37,3 +37,11 @@ PYTHONPATH=. python scripts/05_make_slide4_summary.py
   - `outputs/figures/time_gap_sensitivity.png`
 - Slide-ready bullets:
   - `outputs/tables/slide4_summary.md`
+
+## A disciplined approach
+
+This project demo a disciplined approach:
+- Establish strong baselines
+- Quantify incremental lift
+- Extract timing-sensitive insights
+- Translate them into engagement strategy
